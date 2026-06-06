@@ -29,20 +29,19 @@ Desde la raíz del proyecto:
 ./run-tests.sh
 ```
 
-Resultado esperado inicial:
+Resultado final con la implementación de WHERE completa:
 
 ```text
 PASS valid SELECT without WHERE
 PASS unknown projection column
-FAIL TODO WHERE AST and trace -> WHERE válido no debe producir errores: SYNTACTIC_EXPECTED_WHERE_OPERAND|1:41|Soporte WHERE pendiente: implemente el AST de condiciones.
-
-FAIL TODO WHERE unknown column diagnostic -> Debe reportar SEMANTIC_UNKNOWN_WHERE_COLUMN
-FAIL TODO WHERE type mismatch diagnostic -> Debe reportar SEMANTIC_TYPE_MISMATCH
+PASS TODO WHERE AST and trace
+PASS TODO WHERE unknown column diagnostic
+PASS TODO WHERE type mismatch diagnostic
 PASS TODO WHERE missing operand diagnostic
-Passed: 3 Failed: 3
+Passed: 6 Failed: 0
 ```
 
-Ese resultado significa que el proyecto base **compila y está listo para usar**. Los 3 fallos son esperados porque corresponden al módulo `WHERE` que debés implementar.
+![Resultado de las pruebas](evidencia/resultado_tests.png)
 
 ## Restricciones
 
